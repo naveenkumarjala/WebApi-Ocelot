@@ -1,0 +1,22 @@
+{
+  "Routes": [
+
+    {
+      "DownstreamPathTemplate": "/api/Employee",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5278
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Employee/GetEmployee",
+      "UpstreamHttpMethod": [ "Get" ]
+
+    }
+
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5145"
+  }
+}
